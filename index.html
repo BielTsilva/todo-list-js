@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>To Do</title>
+</head>
+<body>
+    <div id="content-display">
+        <nav id="menu">
+            <p id="title-menu"> Welcome </p>
+            <button id="open-modal">Add a new task</button>
+        </nav>
+    
+        <main id="container">
+        
+            <ul id="task-list">
+
+            </ul>
+            
+        </main>
+    
+        <div id="modal">
+            <div class="modal-content">
+                <form id="task-form">
+                    <label for="task-name">
+                        <legend>Please provide a name for your task:</legend>
+                        <input id="task-name" name="task-name" type="text" placeholder="type the task name here" required>
+                    </label>
+                </form>
+                <div id="modal-navigation">
+                    <button id="close-modal" class="close-btn">Cancel</button>
+                    <button id="add-task" class="confirm-btn">Confirm</button>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

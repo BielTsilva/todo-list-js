@@ -1,0 +1,161 @@
+:root
+{
+    --main-bg-color: #706eec;
+    --scnd-bg-color: #EBEAFF;
+    --btn-add-color: #9694FF;
+    --btn-edt-color: #9d9ce2;
+    --btn-rmv-color: #FF2929;
+
+    /** 
+    var(--main-bg-color); 
+    rgb colors: 
+    rgb(235, 234, 255);
+    rgb(150, 148, 255);
+    blue rgb(61, 59, 243);
+    red rgb(255, 41, 41);
+    **/
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: var(--main-bg-color);
+}
+
+#content-display
+{
+    background-color: var(--scnd-bg-color);
+    width: 80%;
+    border-radius: 10px;
+    margin: 10vh auto;
+    height: 70vh;
+}
+
+#menu
+{
+    margin: 5px;
+    width: 80%;
+    padding-top: 14px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+#container
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 75%;
+    margin: 20vh auto;
+    padding: 5px;
+}
+
+#item-name
+{
+    font-size: 19px;
+    padding: 0 5px;
+}
+
+button
+{
+    padding: 4px 11px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+input
+{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    height: 100%;
+    margin: 5px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+ul
+{
+    display: block;
+    width: 100%;
+    list-style: none;
+}
+
+li
+{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#delete-btn, .close-btn
+{
+    background-color: var(--btn-rmv-color);
+}
+
+#open-modal, .confirm-btn
+{
+    background-color: var(--btn-add-color);
+}
+
+#edit-btn
+{
+    background-color: var(--btn-edt-color);
+}
+
+#delete-btn:hover, .close-btn:hover
+{
+    background-color: #ff2929d2;
+}
+
+#open-modal:hover, .confirm-btn:hover
+{
+    background-color: #9694ffde;
+}
+
+#edit-btn:hover
+{
+    background-color: #9d9ce2d5;
+}
+
+#modal
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, 0.719);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content
+{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--scnd-bg-color);
+}
+
+#modal-navigation
+{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
